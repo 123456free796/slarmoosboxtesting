@@ -927,7 +927,7 @@ export class Config {
     ]);
     public static readonly blackKeyNameParents: ReadonlyArray<number> = [-1, 1, -1, 1, -1, 1, -1, -1, 1, -1, 1, -1];
     public static readonly tempoMin: number = 1;
-    public static readonly tempoMax: number = 500;
+    public static readonly tempoMax: number = 97104;
     public static readonly octaveMin: number = -2;
     public static readonly octaveMax: number = 2;
     public static readonly echoDelayRange: number = 24;
@@ -1186,7 +1186,8 @@ export class Config {
         { name: "chorus", voices: 9, spread: 0.22, offset: 0, expression: 0.6, sign: 1.0 },
         { name: "block", voices: 9, spread: 6, offset: 6, expression: 0.6, sign: 0.8 },
         { name: "extraterrestrial", voices: 6, spread: 15.2, offset: -6, expression: 0.5, sign: 0.7 },
-        { name: "bow", voices: 9, spread: 0.006, offset: 0, expression: 0.5, sign: 0.5}
+        { name: "bow", voices: 9, spread: 0.006, offset: 0, expression: 0.5, sign: 0.5},
+	{ name: "FUCK", voices: 9, spread: 5, offset: 3, expression: -5, sign: 0.0},
 		
         //for modbox; voices = riffapp, spread = intervals, offset = offsets, expression = volume, and sign = signs
     ]);
@@ -1332,6 +1333,7 @@ export class Config {
         //128 and 256 from slarmoo's box
         { name: "128x", mult: 128.0, hzOffset: 0.0, amplitudeSign: 1.0 },
         { name: "256x", mult: 250.0, hzOffset: 0.0, amplitudeSign: 1.0},
+
     ]);
 
     //still used for drumsets
